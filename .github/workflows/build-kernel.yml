@@ -25,12 +25,12 @@ jobs:
     - name: Download Proton-Clang
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://gitlab.com/clangsantoni/zyc_clang -b 18 clang --depth=1
+        git clone https://github.com/kdrag0n/proton-clang clang --depth=1
         
     - name: Download kernel source
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/jordanyoong1/kernel_xiaomi_alioth android-kernel --depth=1
+        git clone https://github.com/Blackmanx/kernel_realme_sm8250 -b bigshot android-kernel --depth=1
 
     - name: Setup KernelSU
       run: |
